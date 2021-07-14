@@ -6,11 +6,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Simple Boilerplate</title>
   <link rel="icon" href="./img/fav.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
   
 </head>
 
 <body>
- <h1>Simple Boilerplate</h1>
+ <header class="main-header">
+  <div class="container">
+  <div class="logo">
+    <div class="word__people">PEOPLE</div>
+    <div class="word__made">MADE</div>
+    <div class="word__studio">STUDIO</div>
+    <div class="logo-pct">
+      <img src="./img/Logo p1.png" width="620px"> 
+    </div>
+  </div>
+  <div class="main-nav-coop">
+<nav class="main-navigation">
+  <a href="#works">Works</a>
+  <a href="#">About us</a>
+  <a href="#">Contacts</a>
+</nav>
+<div class="main-coop">
+  <form action="" method="post">
+    <input id="email" type="text" name="email" placeholder="Email">
+    <input id="message" type="text" name="message" placeholder="Message">
+    <button type="submit" value="Send">Send</button>
+  </form>
+</div>
+  </div>
+</div>
+ </header>
+ <main>
+   <div id="works" class="works">
+    <div class="ticker">
+			<div class="ticker__list">
+				<div class="ticker__item">works </div>
+			</div>
+		</div>
+     <div class="container">
+      <div class="works__text">
+        Клиенты, которые остались довольны и, что не мало важно, оставили довольными нас.
+      </div>
+      <div class="works__logo">
+      <img src="./img/Logo p2.png" width="620px">
+    </div>
+     </div>
+   </div>
+ </main>
   <script src="./js/index.js"></script>
 </body>
 

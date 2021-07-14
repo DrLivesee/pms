@@ -1,0 +1,134 @@
+.main-header {
+	padding-top: 110px;
+	width: 100%;
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.logo {
+		font-size: 64px;
+		position: relative;
+		width: 820px;
+
+		&:hover .word__made {
+			top: 0;
+			transition: ease-in-out 1s;
+			opacity: 1;
+		}
+
+		&:hover .word__studio {
+			top: 0;
+			transform: rotate(0deg);
+			transition: ease-in-out 1s;
+			opacity: 1;
+		}
+
+		.word__people {
+			font-family: 'Nanum Myeongjo', serif;
+			position: absolute;
+			left: 80px;
+		}
+		.word__made {
+			font-family: 'Nanum Myeongjo', serif;
+			position: absolute;
+			top: 90px;
+			left: 350px;
+			transition: ease-in-out 1.2s;
+			opacity: 0.8;
+		}
+		.word__studio {
+			font-family: 'Nanum Myeongjo', serif;
+			position: absolute;
+			top: 160px;
+			left: 570px;
+			transform: rotate(45deg);
+			transition: ease-in-out 1.2s;
+			opacity: 0.6;
+		}
+
+		.logo-pct {
+			padding-top: 180px;
+		}
+	}
+
+	.main-nav-coop {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 350px;
+		.main-navigation {
+			margin-top: 32px;
+
+			display: flex;
+			justify-content: space-between;
+			a {
+				color: black;
+				font-family: 'Libre Baskerville', serif;
+				font-size: 18px;
+				padding: 5px;
+
+				&:hover {
+					color: #284ccb;
+				}
+				&:active {
+					color: #1b21ae;
+				}
+			}
+		}
+
+		.main-coop {
+			form {
+				display: flex;
+				flex-direction: column;
+			}
+			input {
+				display: block;
+				outline: none;
+				border: none;
+				border-bottom: 1px solid black;
+				font-size: 16px;
+				font-family: 'Libre Baskerville', serif;
+				padding: 5px;
+				padding-bottom: 2px;
+				padding-left: 0px;
+				margin-bottom: 20px;
+
+				&::placeholder {
+					display: block;
+					width: auto;
+					color: grey;
+					font-family: 'Libre Baskerville', serif;
+					font-size: 16px;
+					transition: ease-in-out 0.2s;
+				}
+
+				&:hover {
+					border-bottom: 1px solid #284ccb;
+					&::placeholder {
+						transform: scaleY(0);
+						transition: ease-in-out 0.3s;
+					}
+				}
+
+				&:focus {
+					border-bottom: 1px solid #1b21ae;
+				}
+			}
+
+			button {
+				margin-top: 30px;
+				font-family: 'Libre Baskerville', serif;
+				font-size: 16px;
+				width: 80px;
+				outline: none;
+				border: 1px solid black;
+				padding: 5px;
+				border-radius: 10px;
+				cursor: pointer;
+				align-self: flex-end;
+				background-color: white;
+			}
+		}
+	}
+}

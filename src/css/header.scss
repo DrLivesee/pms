@@ -49,6 +49,15 @@
 
 		.logo-pct {
 			padding-top: 180px;
+			position: relative;
+
+			img {
+				&:nth-child(2) {
+					position: absolute;
+					top: 140px;
+					left: 350px;
+				}
+			}
 		}
 	}
 

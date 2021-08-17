@@ -4,67 +4,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simple Boilerplate</title>
-  <link rel="icon" href="./img/fav.png" type="image/png">
+  <title>PMC</title>
+  <link rel="icon" href="#" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;700&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-  
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
- <header class="main-header">
   <div class="container">
-  <div class="logo">
-    <div class="word__people">PEOPLE</div>
-    <div class="word__made">MADE</div>
-    <div class="word__studio">STUDIO</div>
-    <div class="logo-pct">
-      <img src="./img/Logo p1.png" width="620px"> 
-      <img data-aos="zoom-in" src="./img/Logo p1 circle.png" width="280px">
-    </div>
+  <header class="main-header">
+    <a class="display-none people-fixed" href="#">people</a>
+    <a class="display-none made-fixed" href="#">made</a>
+    <a class="display-none clique-fixed" href="#">clique</a>
+    <div class="main-name">
+    <a class="people" href="#">people</a>
+    <a class="made" href="#">made</a>
+    <a class="clique" href="#">clique</a>
   </div>
-  <div class="main-nav-coop">
-<nav data-aos="flip-up" class="main-navigation">
-  <a href="#works">Works</a>
-  <a href="#">About us</a>
-  <a href="#">Contacts</a>
-</nav>
-<div data-aos="fade-left" class="main-coop">
-  <form action="" method="post">
-    <input id="email" type="text" name="email" placeholder="Email">
-    <input id="message" type="text" name="message" placeholder="Message">
-    <button type="submit" value="Send">Send</button>
-  </form>
+  </header>
 </div>
-  </div>
-</div>
- </header>
- <main>
-   <div id="works" class="works">
-    <div class="ticker">
-			<div class="ticker__list">
-				<div class="ticker__item">works </div>
-			</div>
-		</div>
-     <div class="container">
-      <div data-aos="fade-up" class="works__text">
-        Клиенты, которые остались довольны и, что немаловажно, оставили довольными нас.
-      </div>
-      <div class="works__logo">
-      <img src="./img/Logo p2.png" width="620px">
+  <main class="container">
+    <div class="main-block about-us">
+      <span class="text">
+        Мы делаем веб-дизайн, брендинг, фронтенд и бэкенд разработку. Занимаемся креативным кодингом. <br><br>Так же мы можем подготовить большое количество банннеров, креативов и иллюстраций за короткий срок. Этот формат работы пригодится для поддержки социальных сетей, сайтов и рекламных кампаний.
+      </span>
     </div>
-     </div>
-   </div>
- </main>
+    <div class="main-block works">
+      <span class="text">Клиенты, которые остались довольны и, что немаловажно, оставили довольными нас.</span>
+    </div>
+    <div class="main-block clique"></div>
+  </main>
   <script src="./js/index.js"></script>
 </body>
 

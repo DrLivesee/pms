@@ -39,11 +39,52 @@ a {
 	padding-top: 400px;
 	padding-bottom: 400px;
 	display: flex;
-	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+
+	@media (min-width: 1170px) {
+		flex-direction: row;
+		justify-content: flex-end;
+	}
 }
 
 .display-none {
-	display: none;
+	display: none !important;
+}
+
+.position-relative {
+	position: relative !important;
+}
+
+.btn {
+	outline: none;
+	text-decoration: none;
+	padding: 8px 17px;
+	padding-top: 3px;
+	border-radius: 50px;
+	border: 2px solid black;
+	font-size: 30px;
+	text-transform: lowercase;
+	background-color: #fffce6;
+	color: black;
+	font-weight: 800;
+
+	@media (min-width: 1170px) {
+		font-size: 60px;
+		padding: 12px 40px;
+		padding-top: 3px;
+	}
+}
+
+.text-mobile {
+	display: block;
+	width: 320px;
+	font-size: 16px;
+	line-height: 28px;
+
+	@media (min-width: 1170px) {
+		display: none;
+	}
 }
 
 // data-aos="fade-up"

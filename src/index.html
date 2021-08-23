@@ -1,41 +1,150 @@
 <!DOCTYPE html>
 <html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PMC</title>
+		<link rel="icon" href="#" type="image/png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PMC</title>
-  <link rel="icon" href="#" type="image/png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
-</head>
+	<body>
+		<div class="container">
+			<header class="main-header">
+				<a class="people-fixed display-none" href="#about-us">people</a>
+				<a class="made-fixed" href="#works">made</a>
+				<a class="clique-fixed" href="#cooperation">clique</a>
 
-<body>
-  <div class="container">
-  <header class="main-header">
-    <a class="display-none people-fixed" href="#">people</a>
-    <a class="display-none made-fixed" href="#">made</a>
-    <a class="display-none clique-fixed" href="#">clique</a>
-    <div class="main-name">
-    <a class="people" href="#">people</a>
-    <a class="made" href="#">made</a>
-    <a class="clique" href="#">clique</a>
-  </div>
-  </header>
-</div>
-  <main class="container">
-    <div class="main-block about-us">
-      <span class="text">
-        Мы делаем веб-дизайн, брендинг, фронтенд и бэкенд разработку. Занимаемся креативным кодингом. <br><br>Так же мы можем подготовить большое количество банннеров, креативов и иллюстраций за короткий срок. Этот формат работы пригодится для поддержки социальных сетей, сайтов и рекламных кампаний.
-      </span>
-    </div>
-    <div class="main-block works">
-      <span class="text">Клиенты, которые остались довольны и, что немаловажно, оставили довольными нас.</span>
-    </div>
-    <div class="main-block clique"></div>
-  </main>
-  <script src="./js/index.js"></script>
-</body>
+				<div class="main-name">
+					<a class="people" href="#about-us">people</a>
+					<a class="people-mobile" href="#about-us">people</a>
+					<a class="made" href="#works">made</a>
+					<a class="clique" href="#cooperation">clique</a>
+				</div>
+			</header>
+		</div>
+		<main>
+			<div class="container">
+				<div id="about-us" class="main-block about-us">
+					<span class="text">
+						Мы делаем веб-дизайн, брендинг, фронтенд и бэкенд разработку.
+						Занимаемся креативным кодингом. <br /><br />Так же мы можем
+						подготовить большое количество банннеров, креативов и иллюстраций за
+						короткий срок. Этот формат работы пригодится для поддержки
+						социальных сетей, сайтов и рекламных кампаний.
+					</span>
+					<h3 class="people-mobile">people</h3>
+					<span class="text-mobile">
+						Мы делаем веб-дизайн, брендинг, фронтенд и бэкенд разработку.
+						Занимаемся креативным кодингом. <br /><br />Так же мы можем
+						подготовить большое количество банннеров, креативов и иллюстраций за
+						короткий срок. Этот формат работы пригодится для поддержки
+						социальных сетей, сайтов и рекламных кампаний.
+					</span>
+				</div>
+				<div id="works" class="main-block works">
+					<span class="text"
+						>Клиенты, которые остались довольны и, что немаловажно, оставили
+						довольными нас.</span
+					>
+					<h3 class="made-mobile">made</h3>
+					<span class="text-mobile"
+						>Клиенты, которые остались довольны и, что немаловажно, оставили
+						довольными нас.</span
+					>
+				</div>
+				<div id="cooperation" class="main-block cooperation">
+					<span class="text"
+						>Свяжитесь с нами и опишите задачу. Чаще всего мы пускаем все силы
+						на ее выполнение.</span
+					>
+					<h3 class="clique-mobile">clique</h3>
+					<span class="text-mobile"
+						>Свяжитесь с нами и опишите задачу. Чаще всего мы пускаем все силы
+						на ее выполнение.</span
+					>
+					<a class="btn" href="#contacts">Связаться с нами</a>
+				</div>
+			</div>
+			<div id="contacts" class="contacts">
+				<div class="container">
+					<form class="main-form" action="#" method="POST">
+						<h1>
+							Оставьте, пожалуйста,<br />
+							Ваши данные:
+						</h1>
+						<div class="input-items">
+							<div class="input-item">
+								<label class="label-user" for="name-user"
+									><span>Имя</span></label
+								>
+								<input
+									class="input-user"
+									id="name-user"
+									type="text"
+									name="nameUser"
+									value=""
+									autocomplete="off"
+									required
+								/>
+								<label class="label-user__mobile" for="name-user"
+									><span>Имя</span></label
+								>
+							</div>
+							<div class="input-item">
+								<label class="label-user" for="email-user"
+									><span>Email</span></label
+								>
+								<input
+									class="input-user"
+									id="email-user"
+									type="email"
+									name="emailUser"
+									value=""
+								/>
+								<label class="label-user__mobile" for="email-user"
+									><span>Email</span></label
+								>
+							</div>
+							<div class="input-item">
+								<label class="label-user" for="tel-user"
+									><span>Телефон</span></label
+								>
+								<input
+									class="input-user"
+									id="tel-user"
+									type="tel"
+									name="phoneUser"
+									value=""
+								/>
+								<label class="label-user__mobile" for="tel-user"
+									><span>Телефон</span></label
+								>
+							</div>
+						</div>
 
+						<a class="btn btn-black" href="#userProblem">Далее</a>
+						<h1 id="userProblem">Вкратце опишите Вашу задачу:</h1>
+						<textarea
+							class="textarea-user"
+							id="textarea"
+							rows="7"
+							cols="37"
+							name="problemUser"
+							maxlength="100"
+							placeholder="Введите послание (до 100 символов)"
+						></textarea>
+
+						<button class="btn btn-black" type="submit">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</main>
+		<script src="./js/index.js"></script>
+	</body>
 </html>

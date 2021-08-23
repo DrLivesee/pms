@@ -1,14 +1,35 @@
 .about-us {
+	padding-top: 110px;
+	padding-bottom: 300px;
 	// background-color: lightskyblue;
-	display: flex;
-	align-items: center;
-	padding-top: 480px;
-	padding-bottom: 310px;
+
+	@media (min-width: 1170px) {
+		padding-top: 480px;
+		padding-bottom: 310px;
+	}
 
 	.text {
-		display: block;
+		display: none;
 		font-size: 16px;
 		width: 320px;
 		margin-right: 150px;
+
+		@media (min-width: 1170px) {
+			display: block;
+		}
+	}
+
+	.people-mobile {
+		display: block;
+		font-size: 60px;
+		line-height: 32px;
+		margin-right: 10px;
+		font-weight: 800;
+		margin-bottom: 100px;
+		width: 320px;
+
+		@media (min-width: 1170px) {
+			display: none;
+		}
 	}
 }

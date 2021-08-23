@@ -1,13 +1,35 @@
 .works {
-	// background-color: lightslategray;
-	display: flex;
-	align-items: center;
-	padding-top: 480px;
-	padding-bottom: 310px;
+	padding-top: 110px;
+	padding-bottom: 490px;
+	// background-color: mediumorchid;
+
+	@media (min-width: 1170px) {
+		padding-top: 480px;
+		padding-bottom: 470px;
+	}
+
 	.text {
-		display: block;
+		display: none;
 		font-size: 16px;
 		width: 320px;
 		margin-right: 150px;
+
+		@media (min-width: 1170px) {
+			display: block;
+		}
+	}
+
+	.made-mobile {
+		display: block;
+		font-size: 60px;
+		line-height: 32px;
+		margin-right: 10px;
+		font-weight: 800;
+		margin-bottom: 100px;
+		width: 320px;
+
+		@media (min-width: 1170px) {
+			display: none;
+		}
 	}
 }

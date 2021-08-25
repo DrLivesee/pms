@@ -116,7 +116,7 @@
 				border-bottom: 2px solid #fffce6;
 				outline: none;
 				color: #fffce6;
-				background-color: black;
+				border-radius: 0%;
 
 				@media (min-width: 1170px) {
 					padding-bottom: 10px;
@@ -128,7 +128,9 @@
 				}
 
 				&:-webkit-autofill {
-					background-color: black;
+					@media (min-width: 1170px) {
+						background-color: black;
+					}
 				}
 
 				&:invalid {

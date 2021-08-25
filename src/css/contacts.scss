@@ -53,6 +53,30 @@
 						margin-bottom: 20px;
 					}
 				}
+
+				.input-item {
+					.label-name {
+						position: absolute;
+						bottom: 5px;
+						transition: 0.2s all;
+					}
+				}
+
+				.input-item {
+					.label-email {
+						position: absolute;
+						bottom: 5px;
+						transition: 0.2s all;
+					}
+				}
+
+				.input-item {
+					.label-phone {
+						position: absolute;
+						bottom: 5px;
+						transition: 0.2s all;
+					}
+				}
 			}
 
 			.label-user {
@@ -73,23 +97,16 @@
 			.label-user__mobile {
 				font-size: 30px;
 				margin-right: 70px;
-				display: block;
-				position: absolute;
+
 				width: 100%;
-				height: 100%;
 
 				@media (min-width: 1170px) {
 					display: none;
 				}
-
-				span {
-					position: absolute;
-					bottom: 0;
-				}
 			}
 
 			.input-user {
-				padding-bottom: 10px;
+				padding-bottom: 5px;
 				padding-top: 15px;
 				display: block;
 				width: 280px;
@@ -99,16 +116,23 @@
 				border-bottom: 2px solid #fffce6;
 				outline: none;
 				color: #fffce6;
-				-webkit-box-shadow: inset 0 0 0 50px black;
-				-webkit-text-fill-color: #fffce6;
+				background-color: black;
 
 				@media (min-width: 1170px) {
+					padding-bottom: 10px;
+					padding-top: 15px;
 					width: 740px;
 					font-size: 60px;
+					-webkit-box-shadow: inset 0 0 0 50px black;
+					-webkit-text-fill-color: #fffce6;
 				}
 
 				&:-webkit-autofill {
 					background-color: black;
+				}
+
+				&:invalid {
+					outline: 0;
 				}
 			}
 
@@ -163,6 +187,24 @@
 					}
 				}
 			}
+		}
+
+		.input-user:focus ~ .label-name,
+		.input-user:valid ~ .label-name {
+			font-size: 14px;
+			top: 0px;
+		}
+
+		.input-user:focus ~ .label-email,
+		.input-user:valid ~ .label-email {
+			font-size: 14px;
+			top: 0px;
+		}
+
+		.input-user:focus ~ .label-phone,
+		.input-user:valid ~ .label-phone {
+			font-size: 14px;
+			top: 0px;
 		}
 	}
 }

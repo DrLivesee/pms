@@ -97,7 +97,6 @@
 			.label-user__mobile {
 				font-size: 30px;
 				margin-right: 70px;
-
 				width: 100%;
 
 				@media (min-width: 1170px) {
@@ -116,6 +115,8 @@
 				border-bottom: 2px solid #fffce6;
 				outline: none;
 				color: #fffce6;
+				background-color: black;
+
 				border-radius: 0%;
 
 				@media (min-width: 1170px) {

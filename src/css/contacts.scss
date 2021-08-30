@@ -161,12 +161,12 @@
 
 			.textarea-user {
 				display: block;
-				padding: 20px;
-				line-height: 18px;
+				padding: 10px;
+				line-height: 28px;
 				border: none;
 				outline: none;
 				resize: none;
-				font-size: 14px;
+				font-size: 24px;
 				width: 80%;
 				margin: 0 auto;
 				background-color: black;
@@ -179,6 +179,7 @@
 					width: 90%;
 					font-size: 60px;
 					line-height: 60px;
+					padding: 20px;
 				}
 
 				&::placeholder {

@@ -25,6 +25,11 @@
 
 	.people {
 		z-index: 2;
+		display: none;
+
+		@media (min-width: 1170px) {
+			display: block;
+		}
 	}
 
 	.people-mobile {

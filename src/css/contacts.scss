@@ -14,13 +14,14 @@
 				display: block;
 				font-size: 30px;
 				font-weight: 800;
-				margin-bottom: 100px;
+				margin-bottom: 40px;
 				margin-left: 20px;
 				text-align: center;
 
 				@media (min-width: 1170px) {
 					font-size: 60px;
 					margin-left: 0;
+					margin-bottom: 100px;
 				}
 			}
 
@@ -160,16 +161,16 @@
 
 			.textarea-user {
 				display: block;
-				padding: 10px;
-				line-height: 40px;
+				padding: 20px;
+				line-height: 18px;
 				border: none;
 				outline: none;
 				resize: none;
-				font-size: 30px;
-				width: 70%;
+				font-size: 14px;
+				width: 80%;
 				margin: 0 auto;
 				background-color: black;
-				border: 1px solid #fffce6;
+				border: 2px solid #fffce6;
 				border-radius: 2px;
 				color: #fffce6;
 				margin-bottom: 60px;
@@ -177,7 +178,7 @@
 				@media (min-width: 1170px) {
 					width: 90%;
 					font-size: 60px;
-					line-height: 80px;
+					line-height: 60px;
 				}
 
 				&::placeholder {

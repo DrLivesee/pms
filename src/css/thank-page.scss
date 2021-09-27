@@ -1,0 +1,41 @@
+.thank {
+	background-color: black;
+	color: #fffce6;
+	padding-top: 374px;
+	padding-bottom: 65px;
+
+	@media (min-width: 117px) {
+		padding-top: 227px;
+		padding-bottom: 65px;
+	}
+
+	.container {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		h1 {
+			font-size: 30px;
+			font-weight: 800;
+			text-align: center;
+			width: 310px;
+			margin-bottom: 300px;
+
+			@media (min-width: 1170px) {
+				font-size: 60px;
+				width: 700px;
+				margin-bottom: 237px;
+			}
+		}
+
+		a {
+			display: block;
+			color: #fffce6;
+			background-color: black;
+			border: 2px solid #fffce6;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+	}
+}

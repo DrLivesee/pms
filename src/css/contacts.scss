@@ -2,7 +2,7 @@
 	background-color: black;
 	color: #fffce6;
 	padding-top: 80px;
-	padding-bottom: 50px;
+	padding-bottom: 65px;
 
 	.container {
 		display: flex;
@@ -10,37 +10,44 @@
 		align-items: center;
 
 		form {
+			display: flex;
+			flex-direction: column;
 			h1 {
 				display: block;
 				font-size: 30px;
 				font-weight: 800;
-				margin-bottom: 40px;
+				margin-bottom: 80px;
 				margin-left: 20px;
-				text-align: center;
+				margin-right: 20px;
+				align-self: center;
 
 				@media (min-width: 1170px) {
 					font-size: 60px;
-					margin-left: 0;
-					margin-bottom: 100px;
+					margin-left: 0px;
+					margin-right: 0px;
+					margin-bottom: 180px;
+					width: 1250px;
 				}
-			}
 
-			#userProblem {
-				padding-top: 50px;
+				&:nth-child(2n) {
+					margin-bottom: 120px;
+					@media (min-width: 1170px) {
+						width: 1042px;
+					}
+				}
 			}
 
 			.input-items {
 				display: flex;
 				flex-direction: column;
-				margin-left: 20px;
 				margin-bottom: 100px;
-				border-color: blueviolet;
+				align-self: center;
 
 				@media (min-width: 1170px) {
 					align-items: flex-end;
 					margin-left: 0px;
 					width: 1096px;
-					margin-bottom: 220px;
+					margin-bottom: 100px;
 				}
 
 				.input-item {
@@ -50,32 +57,114 @@
 					position: relative;
 
 					@media (min-width: 1170px) {
-						align-self: flex-end;
-						margin-bottom: 20px;
+						margin-bottom: 30px;
 					}
-				}
 
-				.input-item {
 					.label-name {
 						position: absolute;
 						bottom: 5px;
 						transition: 0.2s all;
-					}
-				}
 
-				.input-item {
+						@media (min-width: 1170px) {
+							bottom: 0px;
+							transition: 0.4s all;
+						}
+					}
+
 					.label-email {
 						position: absolute;
 						bottom: 5px;
 						transition: 0.2s all;
+						@media (min-width: 1170px) {
+							bottom: 0px;
+							transition: 0.4s all;
+						}
 					}
-				}
 
-				.input-item {
 					.label-phone {
 						position: absolute;
 						bottom: 5px;
 						transition: 0.2s all;
+						@media (min-width: 1170px) {
+							bottom: 0px;
+							transition: 0.4s all;
+						}
+					}
+				}
+
+				.telegram-user {
+					margin-top: 30px;
+					position: relative;
+					margin-right: 84px;
+					align-self: center;
+					input {
+						z-index: -1;
+						opacity: 0;
+
+						&:checked {
+							& + label {
+								&::before {
+									content: '';
+									cursor: pointer;
+									display: block;
+									height: 30px;
+									position: absolute;
+									background-color: #fffce6;
+									top: 41px;
+									left: 237px;
+									width: 30px;
+									text-align: center;
+									border-radius: 1px;
+
+									@media (min-width: 1170px) {
+										top: 37px;
+										left: 767px;
+										width: 20px;
+										height: 20px;
+									}
+								}
+							}
+						}
+					}
+
+					label {
+						position: relative;
+						font-size: 30px;
+						font-weight: 800;
+						color: black;
+						text-shadow: #fffce6 1px 1px 0, #fffce6 -1px -1px 0,
+							#fffce6 -1px 1px 0, #fffce6 1px -1px 0;
+						align-self: center;
+						cursor: pointer;
+						width: 210px;
+
+						@media (min-width: 1170px) {
+							font-size: 60px;
+							width: auto;
+						}
+
+						&::after {
+							box-sizing: border-box;
+							content: '';
+							border: 1px solid #fffce6;
+							cursor: pointer;
+							display: block;
+							height: 44px;
+							position: absolute;
+							left: 230px;
+							line-height: 20px;
+							top: 34px;
+							width: 44px;
+							border-radius: 5px;
+
+							@media (min-width: 1170px) {
+								left: 760px;
+								line-height: 20px;
+								top: 30px;
+								height: 34px;
+								width: 34px;
+							}
+						}
 					}
 				}
 			}
@@ -83,25 +172,11 @@
 			.label-user {
 				font-size: 30px;
 				margin-right: 70px;
-				display: none;
-				bottom: 5px;
-				position: absolute;
-
-				@media (min-width: 1170px) {
-					display: block;
-					position: relative;
-					font-size: 60px;
-					bottom: 5px;
-				}
-			}
-
-			.label-user__mobile {
-				font-size: 30px;
-				margin-right: 70px;
 				width: 100%;
+				font-weight: 800;
 
 				@media (min-width: 1170px) {
-					display: none;
+					font-size: 60px;
 				}
 			}
 
@@ -121,9 +196,9 @@
 				border-radius: 0%;
 
 				@media (min-width: 1170px) {
-					padding-bottom: 10px;
+					padding-bottom: 30px;
 					padding-top: 15px;
-					width: 740px;
+					width: 804px;
 					font-size: 60px;
 					-webkit-box-shadow: inset 0 0 0 50px black;
 					-webkit-text-fill-color: #fffce6;
@@ -142,7 +217,7 @@
 
 			a {
 				width: 180px;
-				margin-bottom: 150px;
+				margin-bottom: 120px;
 
 				@media (min-width: 1170px) {
 					width: 290px;
@@ -167,19 +242,20 @@
 				outline: none;
 				resize: none;
 				font-size: 24px;
-				width: 80%;
+				width: 85%;
 				margin: 0 auto;
 				background-color: black;
 				border: 2px solid #fffce6;
 				border-radius: 2px;
 				color: #fffce6;
-				margin-bottom: 60px;
+				margin-bottom: 160px;
 
 				@media (min-width: 1170px) {
 					width: 90%;
 					font-size: 60px;
 					line-height: 60px;
 					padding: 20px;
+					margin-bottom: 80px;
 				}
 
 				&::placeholder {
@@ -195,21 +271,42 @@
 		}
 
 		.input-user:focus ~ .label-name,
-		.input-user:valid ~ .label-name {
+		.input-user:valid ~ .label-name,
+		.input-user:active ~ .label-name,
+		.input-user:hover ~ .label-name {
 			font-size: 14px;
 			top: 0px;
+
+			@media (min-width: 1170px) {
+				font-size: 16px;
+				top: -25px;
+			}
 		}
 
 		.input-user:focus ~ .label-email,
-		.input-user:valid ~ .label-email {
+		.input-user:valid ~ .label-email,
+		.input-user:active ~ .label-email,
+		.input-user:hover ~ .label-email {
 			font-size: 14px;
 			top: 0px;
+
+			@media (min-width: 1170px) {
+				font-size: 16px;
+				top: -25px;
+			}
 		}
 
 		.input-user:focus ~ .label-phone,
-		.input-user:valid ~ .label-phone {
+		.input-user:valid ~ .label-phone,
+		.input-user:active ~ .label-phone,
+		.input-user:hover ~ .label-phone {
 			font-size: 14px;
 			top: 0px;
+
+			@media (min-width: 1170px) {
+				font-size: 16px;
+				top: -25px;
+			}
 		}
 	}
 }

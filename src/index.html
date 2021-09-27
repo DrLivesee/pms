@@ -18,14 +18,15 @@
 
 	<body>
 		<div class="container">
-			<header class="main-header">
+			<header class="main-header" id="header">
 				<a class="people-fixed display-none" href="#about-us">people</a>
+				<a class="people-fixed-mobile" href="#about-us">people</a>
 				<a class="made-fixed" href="#works">made</a>
 				<a class="clique-fixed" href="#cooperation">clique</a>
 
 				<div class="main-name">
 					<a class="people" href="#about-us">people</a>
-					<a class="people-mobile" href="#about-us">people</a>
+					<a class="people-main-mobile" href="#about-us">people</a>
 					<a class="made" href="#works">made</a>
 					<a class="clique" href="#cooperation">clique</a>
 				</div>
@@ -62,11 +63,13 @@
 					>
 				</div>
 				<div id="cooperation" class="main-block cooperation">
-					<a class="clique" href="#cooperation">clique</a>
-					<span class="text"
-						>Свяжитесь с нами и опишите задачу. Чаще всего мы пускаем все силы
-						на ее выполнение.</span
-					>
+					<div class="coop-flex-block">
+						<a class="clique" href="#cooperation">clique</a>
+						<span class="text"
+							>Свяжитесь с нами и опишите задачу. Чаще всего мы пускаем все силы
+							на ее выполнение.</span
+						>
+					</div>
 					<h3 class="clique-mobile">clique</h3>
 					<span class="text-mobile"
 						>Свяжитесь с нами и опишите задачу. Чаще всего мы пускаем все силы
@@ -78,15 +81,9 @@
 			<div id="contacts" class="contacts">
 				<div class="container">
 					<form class="main-form" action="#" method="POST">
-						<h1>
-							Оставьте, пожалуйста,<br />
-							Ваши данные:
-						</h1>
+						<h1>Оставьте, пожалуйста, Ваши данные:</h1>
 						<div class="input-items">
 							<div class="input-item">
-								<label class="label-user" for="name-user"
-									><span>Имя</span></label
-								>
 								<input
 									class="input-user"
 									id="name-user"
@@ -96,14 +93,9 @@
 									autocomplete="off"
 									required
 								/>
-								<label class="label-user__mobile label-name" for="name-user"
-									>Имя</label
-								>
+								<label class="label-user label-name" for="name-user">Имя</label>
 							</div>
 							<div class="input-item">
-								<label class="label-user" for="email-user"
-									><span>Email</span></label
-								>
 								<input
 									class="input-user"
 									id="email-user"
@@ -113,14 +105,11 @@
 									autocomplete="off"
 									required
 								/>
-								<label class="label-user__mobile label-email" for="email-user"
+								<label class="label-user label-email" for="email-user"
 									>Email</label
 								>
 							</div>
 							<div class="input-item">
-								<label class="label-user" for="tel-user"
-									><span>Телефон</span></label
-								>
 								<input
 									class="input-user"
 									id="tel-user"
@@ -130,9 +119,16 @@
 									autocomplete="off"
 									required
 								/>
-								<label class="label-user__mobile label-phone" for="tel-user"
+								<label class="label-user label-phone" for="tel-user"
 									>Телефон</label
 								>
+							</div>
+							<div class="input-item telegram-user">
+								<input type="checkbox" name="telegram" id="input-telegram" />
+								<label for="input-telegram">
+									<!-- <img src="../src/img/User_tg.svg" width="550px"/> -->
+									я использую телеграм
+								</label>
 							</div>
 						</div>
 
@@ -150,6 +146,13 @@
 
 						<button class="btn btn-black" type="submit">Отправить</button>
 					</form>
+				</div>
+			</div>
+
+			<div class="thank display-none">
+				<div class="container">
+					<h1>Спасибо! Мы свяжемся с Вами в скором времени!</h1>
+					<a href="#header" class="btn"> на главную </a>
 				</div>
 			</div>
 		</main>

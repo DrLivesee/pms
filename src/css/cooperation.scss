@@ -11,25 +11,25 @@
 
 	.clique {
 		font-size: 78px;
-		line-height: 78px;
-		margin-right: 40px;
+		line-height: 58px;
 		font-weight: 800;
-		background-color: blue;
+		margin-right: 295px;
 		width: auto;
-		margin-right: 570px;
 		justify-content: flex-start;
 	}
 
-	// background-color: mediumvioletred;
+	.coop-flex-block {
+		width: 100%;
+		display: flex;
+		justify-content: end;
+	}
 
 	.text {
 		display: none;
 		font-size: 16px;
 		width: 320px;
 		margin-right: 150px;
-		align-content: center;
 		margin-bottom: 324px;
-		align-self: flex-end;
 
 		@media (min-width: 1170px) {
 			display: block;

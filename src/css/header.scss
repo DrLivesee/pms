@@ -14,26 +14,35 @@
 
 	.main-name {
 		display: flex;
-		justify-content: center;
-		width: 820px;
+		justify-content: flex-end;
+		width: 326px;
 		opacity: 1;
 
 		@media (min-width: 1170px) {
 			justify-content: flex-end;
+			width: 820px;
 		}
 	}
 
 	.people {
 		z-index: 2;
-		display: none;
+		display: block;
 
 		@media (min-width: 1170px) {
 			display: block;
 		}
 	}
 
-	.people-mobile {
-		display: block;
+	.made {
+		text-align: right;
+	}
+
+	.clique {
+		text-align: right;
+	}
+
+	.people-main-mobile {
+		display: none;
 
 		@media (min-width: 1170px) {
 			display: none;
@@ -51,6 +60,37 @@
 			display: block;
 		}
 	}
+
+	.people-fixed-mobile {
+		position: fixed;
+		font-size: 32px;
+		line-height: 32px;
+		margin-right: 210px;
+		font-weight: 800;
+		// animation: bounce 0.2s;
+
+		@media (min-width: 1170px) {
+			display: none;
+		}
+	}
+
+	// @keyframes bounce {
+	// 	0% {
+	// 		transform: scale(1);
+	// 	}
+
+	// 	70% {
+	// 		transform: scale(1.5);
+	// 	}
+
+	// 	90% {
+	// 		transform: scale(2);
+	// 	}
+
+	// 	100% {
+	// 		transform: scale(3);
+	// 	}
+	// }
 
 	.z-index {
 		z-index: 4;

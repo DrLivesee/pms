@@ -6,6 +6,7 @@ const fullName = document.querySelector('.main-name')
 const textAboutUs = document.querySelector('.about-us .text')
 const textWorks = document.querySelector('.works .text')
 const textCooperation = document.querySelector('.cooperation .text')
+const cliqueCoop = document.querySelector('.cooperation .clique')
 
 const VERT_OFFSET = 200
 
@@ -94,14 +95,16 @@ window.addEventListener('scroll', function () {
 	}
 
 	if (scroll === 0) {
-		people.classList.add('display-none')
+		peopleFix.classList.add('display-none')
 	}
 
-	if (scroll > 3350) {
+	if (scroll > 3044) {
 		peopleFix.classList.add('display-none')
 		madeFix.classList.add('display-none')
 		cliqueFix.classList.add('display-none')
+		cliqueCoop.classList.remove('display-none')
 	} else {
+		cliqueCoop.classList.add('display-none')
 		peopleFix.classList.remove('display-none')
 		madeFix.classList.remove('display-none')
 		cliqueFix.classList.remove('display-none')

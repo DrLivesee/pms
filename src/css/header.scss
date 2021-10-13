@@ -19,14 +19,29 @@
 		opacity: 1;
 
 		@media (min-width: 1170px) {
+			display: flex;
 			justify-content: flex-end;
 			width: 820px;
 		}
 	}
 
+	.main-name-mobile {
+		display: flex;
+		justify-content: flex-end;
+		width: 326px;
+		opacity: 1;
+		background-color: aqua;
+		position: absolute;
+		margin-left: 0px;
+
+		@media (min-width: 1170px) {
+			display: none;
+		}
+	}
+
 	.people {
 		z-index: 2;
-		display: block;
+		display: none;
 
 		@media (min-width: 1170px) {
 			display: block;
@@ -42,7 +57,7 @@
 	}
 
 	.people-main-mobile {
-		display: none;
+		display: block;
 
 		@media (min-width: 1170px) {
 			display: none;
@@ -55,6 +70,7 @@
 		opacity: 1;
 		z-index: 1;
 		display: none;
+		
 
 		@media (min-width: 1170px) {
 			display: block;
@@ -65,8 +81,11 @@
 		position: fixed;
 		font-size: 32px;
 		line-height: 32px;
-		margin-right: 210px;
+		margin-right: 218px;
 		font-weight: 800;
+		transform-origin: left top;
+		
+		
 		// animation: bounce 0.2s;
 
 		@media (min-width: 1170px) {

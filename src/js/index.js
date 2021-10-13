@@ -12,3 +12,5 @@ import './aos'
 import './module'
 import './scroll'
 import './mobile-scroll'
+import './form'
+

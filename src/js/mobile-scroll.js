@@ -37,40 +37,48 @@ const opacMiddleTitle = (
 	}
 }
 
+
+
 window.addEventListener('scroll', function () {
 	let scroll = window.pageYOffset
 
-	console.log(scroll)
+	// console.log(scroll)
 	// const bodyHeight = document.body.clientHeight
 
 	// opacMiddleTitle(scroll, -200, 760 - VERT_OFFSET, fullName, false, false)
+	opacMiddleTitle(scroll, 00, 1250 - VERT_OFFSET, peopleMob, true, false)
+	// opacMiddleTitle(scroll, 100, 705 - VERT_OFFSET, peopleFixMob, true, false)
 	opacMiddleTitle(scroll, 300, 1400 - VERT_OFFSET, textAboutUsMob, false, false)
-	opacMiddleTitle(scroll, 1500, 2750 - VERT_OFFSET, textWorks, false, false)
-	opacMiddleTitle(
-		scroll,
-		2500,
-		4000 - VERT_OFFSET,
-		textCooperation,
-		false,
-		false
-	)
+	opacMiddleTitle(scroll, 900, 2000 - VERT_OFFSET, madeMob, false, false)
+	opacMiddleTitle(scroll, 1000, 2100 - VERT_OFFSET, textWorksMob, false, false)
+	opacMiddleTitle(scroll, 1700, 2800 - VERT_OFFSET, cliqueMob, false, false)
+	opacMiddleTitle(scroll, 1700, 2900 - VERT_OFFSET, textCooperationMob, false, false)
+	// opacMiddleTitle(scroll, 1500, 2750 - VERT_OFFSET, textWorks, false, false)
+	// opacMiddleTitle(
+	// 	scroll,
+	// 	2500,
+	// 	4000 - VERT_OFFSET,
+	// 	textCooperation,
+	// 	false,
+	// 	false
+	// )
 
-	opacMiddleTitle(
-		scroll,
-		1695 - VERT_OFFSET,
-		2700 - VERT_OFFSET,
-		madeFix,
-		false,
-		false
-	)
-	opacMiddleTitle(
-		scroll,
-		2695 - VERT_OFFSET,
-		3550 - VERT_OFFSET,
-		cliqueFix,
-		false,
-		false
-	)
+	// opacMiddleTitle(
+	// 	scroll,
+	// 	1695 - VERT_OFFSET,
+	// 	2700 - VERT_OFFSET,
+	// 	madeFix,
+	// 	false,
+	// 	false
+	// )
+	// opacMiddleTitle(
+	// 	scroll,
+	// 	2695 - VERT_OFFSET,
+	// 	3550 - VERT_OFFSET,
+	// 	cliqueFix,
+	// 	false,
+	// 	false
+	// )
 
 	// if (scroll > 1495) {
 	// 	madeFix.classList.add('z-index')
@@ -108,23 +116,56 @@ window.addEventListener('scroll', function () {
 	// 	madeFix.classList.remove('display-none')
 	// 	cliqueFix.classList.remove('display-none')
 	// }
+
+	// if (scroll > 0 && scroll < 505) {
+	// 	peopleFixMob.classList.remove('display-none')
+		
+	// } else {
+	// 	peopleFixMob.classList.add('display-none')
+		
+	// }
+
+	// if (scroll > 0 && scroll < 532) {
+	// 	peopleFixMob.classList.remove('display-none')
+	// 	peopleMob.style.opacity = 0
+	// } 
+
+	// if (scroll = 0) {
+	// 	peopleFixMob.classList.add('display-none')
+	// } 
+	
 })
 
 window.addEventListener('scroll', function () {
 	let scroll = window.pageYOffset
 
-	let x = 532 / 1.875
 
-	// console.log(x)
-
-	if (scroll > 0 && scroll <= 532) {
-		peopleFixMob.style.transform = 'scale(' + scroll / x + ')'
-		peopleFixMob.style.marginRight = '122px'
-		peopleFixMob.classList.remove('display-none')
+	if (scroll > 0 && scroll < 520) {
 		peopleMob.style.opacity = 0
-	} else {
+	} 
+	// else {
+	// 	peopleMob.style.opacity = 1
+	// }
+
+	if (scroll === 0) {
+		peopleMob.style.opacity = 0
+	}
+
+	if (scroll => 0 && scroll < 520) {
+		peopleFixMob.classList.remove('display-none')
+	}
+
+	if (scroll >= 520) {
 		peopleFixMob.classList.add('display-none')
-		peopleFixMob.style.marginRight = '210px'
-		opacMiddleTitle(scroll, 300, 1250 - VERT_OFFSET, peopleMob, true, false)
 	}
 })
+
+$(function() {
+
+	$(window).scroll(function() {
+  
+	  var mass = Math.min(1.875, 1+0.0017*$(this).scrollTop());
+  
+	  $('.people-fixed-mobile').css('transform', 'scale(' + mass + ')');
+	});
+});

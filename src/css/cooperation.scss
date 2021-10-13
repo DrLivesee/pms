@@ -3,6 +3,7 @@
 	padding-bottom: 65px;
 	flex-direction: column;
 	align-items: center;
+	// background-color: aquamarine;
 
 	@media (min-width: 1170px) {
 		padding-top: 480px;
@@ -53,6 +54,28 @@
 
 		@media (min-width: 1170px) {
 			width: 650px;
+		}
+	}
+
+	.btn-ligth {
+		&:active {
+			opacity: 0.8;
+			transition: none;
+			color: #fffce6;
+				background-color: black;
+		}
+
+		@media (min-width: 1170px) {
+			&:hover {
+				color: #fffce6;
+				background-color: black;
+				transition: all ease 0.3s;
+			}
+	
+			&:active {
+				opacity: 0.8;
+				transition: none;
+			}
 		}
 	}
 

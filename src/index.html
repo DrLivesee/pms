@@ -26,40 +26,38 @@
 
 				<div class="main-name">
 					<a class="people" href="#about-us">people</a>
-					<a class="people-main-mobile" href="#about-us">people</a>
+					<!-- <a class="people-main-mobile" href="#about-us">people</a> -->
 					<a class="made" href="#works">made</a>
 					<a class="clique" href="#cooperation">clique</a>
 				</div>
+				<!-- <div class="main-name-mobile">
+					<a class="people-main-mobile" href="#about-us">people</a>
+					<a class="people-main-mobile" href="#about-us">made</a>
+					<a class="people-main-mobile" href="#about-us">clique</a>
+					
+				</div> -->
 			</header>
 		</div>
 		<main>
 			<div class="container">
 				<div id="about-us" class="main-block about-us">
 					<span class="text">
-						Мы делаем веб-дизайн, брендинг, фронтенд и бэкенд разработку.
-						Занимаемся креативным кодингом. <br /><br />Так же мы можем
-						подготовить большое количество банннеров, креативов и иллюстраций за
-						короткий срок. Этот формат работы пригодится для поддержки
-						социальных сетей, сайтов и рекламных кампаний.
+						Мы делаем дизайн и разрабатываем сайты <br /><br />Мы стремимся работать только со смелыми заказчиками, готовым к нестандартным решениям. 
 					</span>
 					<h3 class="people-mobile">people</h3>
 					<span class="text-mobile">
-						Мы делаем веб-дизайн, брендинг, фронтенд и бэкенд разработку.
-						Занимаемся креативным кодингом. <br /><br />Так же мы можем
-						подготовить большое количество банннеров, креативов и иллюстраций за
-						короткий срок. Этот формат работы пригодится для поддержки
-						социальных сетей, сайтов и рекламных кампаний.
+						Мы делаем дизайн и разрабатываем сайты <br /><br />Мы стремимся работать только со смелыми заказчиками, готовым к нестандартным решениям. 
 					</span>
 				</div>
 				<div id="works" class="main-block works">
 					<span class="text"
-						>Клиенты, которые остались довольны и, что немаловажно, оставили
-						довольными нас.</span
+						>Наша цель, чтобы наш дизайн работал на Вас. Здесь будут кейсы, которые совмещают 
+						в себе красоту и утилитарность.</span
 					>
 					<h3 class="made-mobile">made</h3>
 					<span class="text-mobile"
-						>Клиенты, которые остались довольны и, что немаловажно, оставили
-						довольными нас.</span
+						>Наша цель, чтобы наш дизайн работал на Вас. Здесь будут кейсы, которые совмещают 
+						в себе красоту и утилитарность..</span
 					>
 				</div>
 				<div id="cooperation" class="main-block cooperation">
@@ -75,13 +73,13 @@
 						>Свяжитесь с нами и опишите задачу. Чаще всего мы пускаем все силы
 						на ее выполнение.</span
 					>
-					<a class="btn" href="#contacts">Связаться с нами</a>
+					<a class="btn btn-ligth" href="#contact-anchor">Связаться с нами</a>
 				</div>
 			</div>
 			<div id="contacts" class="contacts">
 				<div class="container">
-					<form class="main-form" action="#" method="POST">
-						<h1>Оставьте, пожалуйста, Ваши данные:</h1>
+					<form class="main-form" action="https://formspree.io/f/xnqlrdyk" method="POST">
+						<h1 id="contact-anchor">Оставьте, пожалуйста, Ваши данные</h1>
 						<div class="input-items">
 							<div class="input-item">
 								<input
@@ -100,7 +98,7 @@
 									class="input-user"
 									id="email-user"
 									type="text"
-									name="emailUser"
+									name="_replyto"
 									value=""
 									autocomplete="off"
 									required
@@ -126,7 +124,6 @@
 							<div class="input-item telegram-user">
 								<input type="checkbox" name="telegram" id="input-telegram" />
 								<label for="input-telegram">
-									<!-- <img src="../src/img/User_tg.svg" width="550px"/> -->
 									я использую телеграм
 								</label>
 							</div>
@@ -134,7 +131,7 @@
 
 						<a class="btn btn-black" href="#userProblem">Далее</a>
 						<h1 id="userProblem">Вкратце опишите Вашу задачу:</h1>
-						<textarea
+						<!-- <textarea
 							class="textarea-user"
 							id="textarea"
 							rows="7"
@@ -142,8 +139,27 @@
 							name="problemUser"
 							maxlength="100"
 							placeholder="Введите  (до 100 символов)"
-						></textarea>
-
+						></textarea> -->
+						<input
+						class="input-task"
+						id="tel-user"
+						type="text"
+						name="task"
+						value=""
+						placeholder="айдентика/сайт/..."
+						autocomplete="off"
+						
+						/>
+						<input
+						class="input-task"
+						id="tel-user"
+						type="text"
+						name="forWhat"
+						value=""
+						placeholder="для магазина/..."
+						autocomplete="off"
+						
+						/>
 						<button class="btn btn-black" type="submit">Отправить</button>
 					</form>
 				</div>
@@ -156,6 +172,7 @@
 				</div>
 			</div>
 		</main>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script src="./js/index.js"></script>
 	</body>
 </html>

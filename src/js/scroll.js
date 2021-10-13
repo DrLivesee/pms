@@ -110,3 +110,5 @@ window.addEventListener('scroll', function () {
 		cliqueFix.classList.remove('display-none')
 	}
 })
+
+

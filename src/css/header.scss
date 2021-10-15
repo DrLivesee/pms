@@ -84,7 +84,9 @@
 		line-height: 32px;
 		margin-right: 218px;
 		font-weight: 800;
-		transform-origin: left top;
+		text-align: left;
+		// transform-origin: left top;
+		background-color: aqua;
 		
 
 		@media (min-width: 1170px) {

@@ -195,24 +195,78 @@ const items = [peopleMainMob, peopleFixMob, connection, further]
 //     });
 // };
 
+// function navigation(){
+// 	var window_top = $(window).scrollTop();
+// 	var div_top = $('.navigation-anchor').offset().top;
+// 	if (window_top > div_top) {
+// 		$('.navigation').css('top', window_top - div_top);
+// 	} else {
+// 		$('.navigation').css('top', '0px');
+// 	}
+// }
+
+// $(function() {
+// 	$('body').scroll(navigation);
+//   navigation();	
+// 	var $root = $('html, body');
+
 	
+// 	$(connection).click(function() {
+// 			$root.animate({
+// 					scrollTop: $( $(this).attr('href') ).offset().top
+// 			}, 500);
+// 			return false;
+// 	});
+// 	$(further).click(function() {
+// 		$root.animate({
+// 				scrollTop: $( $(this).attr('href') ).offset().top
+// 		}, 500);
+// 		return false;
+// });
+// $(peopleMainMob).click(function() {
+// 	$root.animate({
+// 			scrollTop: $( $(this).attr('href') ).offset().top
+// 	}, 500);
+// 	return false;
+// });
+// });
 
-for (let item of items) {
-    item.addEventListener('click', function(e) {
-        e.preventDefault();
+// $(document).ready(function(){
+//     $('a[href^="#"], *[data-href^="#"]').on('click', function(e){
+//         e.preventDefault();
+//         var t = 1000;
+//         var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
+//         $('html,body').stop().animate({ scrollTop: $(d).offset().top }, t);
+//     });
+// });
 
-        let href = this.getAttribute('href').substring(1);
+$(document).ready(function(){
+		$(connection).click(function (e) {
+			e.preventDefault();
+			var id  = $(this).attr('href'),
+				top = $(id).offset().top;
+			$('body,html').animate({scrollTop: top}, 500);
+		});
 
-        const scrollTarget = document.getElementById(href);
+		$(further).click(function (e) {
+			e.preventDefault();
+			var id  = $(this).attr('href'),
+				top = $(id).offset().top;
+			$('body,html').animate({scrollTop: top}, 500);
+		});
 
-        // const topOffset = document.querySelector('.scrollto').offsetHeight;
-        const topOffset = 0;
-        const elementPosition = scrollTarget.getBoundingClientRect().top;
-        const offsetPosition = elementPosition - topOffset;
+		$(peopleMainMob).click(function (e) {
+			e.preventDefault();
+			var id  = $(this).attr('href'),
+				top = $(id).offset().top;
+			$('body,html').animate({scrollTop: top}, 500);
+		});
 
-        window.scrollBy({
-            top: offsetPosition,
-            behavior: 'smooth'
-        });
-    });
-};
+		$(peopleFixMob).click(function (e) {
+			e.preventDefault();
+			var id  = $(this).attr('href'),
+				top = $(id).offset().top;
+			$('body,html').animate({scrollTop: top}, 500);
+		});
+});
+	

@@ -177,9 +177,9 @@ $(function() {
 	});
 });
 
-const connection = document.querySelector('a .btn-light')
+const connection = document.getElementById('btn-light')
 
-const further = document.querySelector('a .btn-further')
+const further = document.getElementById('btn-further')
 
 const items = [peopleMainMob, peopleFixMob, connection, further]
 
@@ -194,4 +194,5 @@ for (let item of items) {
         });
     });
 };
+
 	

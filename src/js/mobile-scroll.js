@@ -7,6 +7,7 @@ const cliqueMob = document.querySelector('.clique-mobile')
 const textAboutUsMob = document.querySelector('.about-us .text-mobile')
 const textWorksMob = document.querySelector('.works .text-mobile')
 const textCooperationMob = document.querySelector('.cooperation .text-mobile')
+const peopleMainMob = document.querySelector('.people-main-mobile')
 
 const VERT_OFFSET = 200
 
@@ -151,12 +152,18 @@ window.addEventListener('scroll', function () {
 		peopleMob.style.opacity = 0
 	}
 
-	if (scroll => 0 && scroll < 520) {
+	if (scroll > 0 && scroll < 520) {
 		peopleFixMob.classList.remove('display-none')
 	}
 
-	if (scroll >= 520) {
+	if (scroll >= 520 || scroll < 0) {
 		peopleFixMob.classList.add('display-none')
+	}
+
+	if (scroll <= 0) {
+		peopleMainMob.classList.remove('display-none')
+	} else {
+		peopleMainMob.classList.add('display-none')
 	}
 })
 

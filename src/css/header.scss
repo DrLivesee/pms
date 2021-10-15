@@ -57,7 +57,8 @@
 	}
 
 	.people-main-mobile {
-		display: block;
+		
+		margin-right: 14px;
 
 		@media (min-width: 1170px) {
 			display: none;
@@ -85,31 +86,11 @@
 		font-weight: 800;
 		transform-origin: left top;
 		
-		
-		// animation: bounce 0.2s;
 
 		@media (min-width: 1170px) {
 			display: none;
 		}
 	}
-
-	// @keyframes bounce {
-	// 	0% {
-	// 		transform: scale(1);
-	// 	}
-
-	// 	70% {
-	// 		transform: scale(1.5);
-	// 	}
-
-	// 	90% {
-	// 		transform: scale(2);
-	// 	}
-
-	// 	100% {
-	// 		transform: scale(3);
-	// 	}
-	// }
 
 	.z-index {
 		z-index: 4;

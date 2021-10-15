@@ -176,3 +176,22 @@ $(function() {
 	  $('.people-fixed-mobile').css('transform', 'scale(' + mass + ')');
 	});
 });
+
+const connection = document.querySelector('a .btn-light')
+
+const further = document.querySelector('a .btn-further')
+
+const items = [peopleMainMob, peopleFixMob, connection, further]
+
+for (let item of items) {
+    item.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = item.getAttribute('href');
+
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};
+	

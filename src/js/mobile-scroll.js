@@ -183,16 +183,36 @@ const further = document.getElementById('btn-further')
 
 const items = [peopleMainMob, peopleFixMob, connection, further]
 
-for (let item of items) {
-    item.addEventListener('click', function (e) {
-        e.preventDefault();
-        const id = item.getAttribute('href');
+// for (let item of items) {
+//     item.addEventListener('click', function (e) {
+//         e.preventDefault();
+//         const id = item.getAttribute('href');
 
-        document.querySelector(id).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
+//         document.querySelector(id).scrollIntoView({
+//             behavior: 'smooth',
+//             block: 'start'
+//         });
+//     });
+// };
+
+	
+
+for (let item of items) {
+    item.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        let href = this.getAttribute('href').substring(1);
+
+        const scrollTarget = document.getElementById(href);
+
+        // const topOffset = document.querySelector('.scrollto').offsetHeight;
+        const topOffset = 0;
+        const elementPosition = scrollTarget.getBoundingClientRect().top;
+        const offsetPosition = elementPosition - topOffset;
+
+        window.scrollBy({
+            top: offsetPosition,
+            behavior: 'smooth'
         });
     });
 };
-
-	

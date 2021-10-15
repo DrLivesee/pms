@@ -82,12 +82,13 @@
 		position: fixed;
 		font-size: 32px;
 		line-height: 32px;
-		// margin-right: 218px;
-		margin-right: 300px;
+		margin-right: 218px;
 		font-weight: 800;
 		text-align: left;
 		transform-origin: left top;
 		background-color: aqua;
+		align-self: flex-start;
+		align-content: flex-start;
 		
 
 		@media (min-width: 1170px) {

@@ -167,15 +167,15 @@ window.addEventListener('scroll', function () {
 	}
 })
 
-$(function() {
+// $(function() {
 
-	$(window).scroll(function() {
+// 	$(window).scroll(function() {
   
-	  var mass = Math.min(1.875, 1+0.0017*$(this).scrollTop());
+// 	  var mass = Math.min(1.875, 1+0.0017*$(this).scrollTop());
   
-	  $('.people-fixed-mobile').css('transform', 'scale(' + mass + ')');
-	});
-});
+// 	  $('.people-fixed-mobile').css('transform', 'scale(' + mass + ')');
+// 	});
+// });
 
 const connection = document.getElementById('btn-light')
 
@@ -240,33 +240,33 @@ const items = [peopleMainMob, peopleFixMob, connection, further]
 //     });
 // });
 
-$(document).ready(function(){
-		$(connection).click(function (e) {
-			e.preventDefault();
-			var id  = $(this).attr('href'),
-				top = $(id).offset().top;
-			$('body,html').animate({scrollTop: top}, 500);
-		});
+// $(document).ready(function(){
+// 		$(connection).click(function (e) {
+// 			e.preventDefault();
+// 			var id  = $(this).attr('href'),
+// 				top = $(id).offset().top;
+// 			$('body,html').animate({scrollTop: top}, 500);
+// 		});
 
-		$(further).click(function (e) {
-			e.preventDefault();
-			var id  = $(this).attr('href'),
-				top = $(id).offset().top;
-			$('body,html').animate({scrollTop: top}, 500);
-		});
+// 		$(further).click(function (e) {
+// 			e.preventDefault();
+// 			var id  = $(this).attr('href'),
+// 				top = $(id).offset().top;
+// 			$('body,html').animate({scrollTop: top}, 500);
+// 		});
 
-		$(peopleMainMob).click(function (e) {
-			e.preventDefault();
-			var id  = $(this).attr('href'),
-				top = $(id).offset().top;
-			$('body,html').animate({scrollTop: top}, 500);
-		});
+// 		$(peopleMainMob).click(function (e) {
+// 			e.preventDefault();
+// 			var id  = $(this).attr('href'),
+// 				top = $(id).offset().top;
+// 			$('body,html').animate({scrollTop: top}, 500);
+// 		});
 
-		$(peopleFixMob).click(function (e) {
-			e.preventDefault();
-			var id  = $(this).attr('href'),
-				top = $(id).offset().top;
-			$('body,html').animate({scrollTop: top}, 500);
-		});
-});
+// 		$(peopleFixMob).click(function (e) {
+// 			e.preventDefault();
+// 			var id  = $(this).attr('href'),
+// 				top = $(id).offset().top;
+// 			$('body,html').animate({scrollTop: top}, 500);
+// 		});
+// });
 	

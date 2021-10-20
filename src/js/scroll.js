@@ -114,46 +114,46 @@ window.addEventListener('scroll', function () {
 })
 
 
-// $(document).ready(function(){
-// 	$(people).click(function (e) {
-// 		e.preventDefault();
-// 		var id  = $(this).attr('href'),
-// 			top = $(id).offset().top;
-// 		$('body,html').animate({scrollTop: top}, 500);
-// 	});
+$(document).ready(function(){
+	$(people).click(function (e) {
+		e.preventDefault();
+		var id  = $(this).attr('href'),
+			top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 500);
+	});
 
-// 	$(made).click(function (e) {
-// 		e.preventDefault();
-// 		var id  = $(this).attr('href'),
-// 			top = $(id).offset().top;
-// 		$('body,html').animate({scrollTop: top}, 500);
-// 	});
+	$(made).click(function (e) {
+		e.preventDefault();
+		var id  = $(this).attr('href'),
+			top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 500);
+	});
 
-// 	$(clique).click(function (e) {
-// 		e.preventDefault();
-// 		var id  = $(this).attr('href'),
-// 			top = $(id).offset().top;
-// 		$('body,html').animate({scrollTop: top}, 500);
-// 	});
+	$(clique).click(function (e) {
+		e.preventDefault();
+		var id  = $(this).attr('href'),
+			top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 500);
+	});
 
-// 	$(peopleFix).click(function (e) {
-// 		e.preventDefault();
-// 		var id  = $(this).attr('href'),
-// 			top = $(id).offset().top;
-// 		$('body,html').animate({scrollTop: top}, 500);
-// 	});
+	$(peopleFix).click(function (e) {
+		e.preventDefault();
+		var id  = $(this).attr('href'),
+			top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 500);
+	});
 
-// 	$(madeFix).click(function (e) {
-// 		e.preventDefault();
-// 		var id  = $(this).attr('href'),
-// 			top = $(id).offset().top;
-// 		$('body,html').animate({scrollTop: top}, 500);
-// 	});
+	$(madeFix).click(function (e) {
+		e.preventDefault();
+		var id  = $(this).attr('href'),
+			top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 500);
+	});
 
-// 	$(cliqueFix).click(function (e) {
-// 		e.preventDefault();
-// 		var id  = $(this).attr('href'),
-// 			top = $(id).offset().top;
-// 		$('body,html').animate({scrollTop: top}, 500);
-// 	});
-// });
+	$(cliqueFix).click(function (e) {
+		e.preventDefault();
+		var id  = $(this).attr('href'),
+			top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 500);
+	});
+});

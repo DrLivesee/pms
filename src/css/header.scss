@@ -67,7 +67,7 @@
 
 	.people-fixed {
 		position: fixed;
-		margin-right: 549px;
+		transform: translateX(-254px);
 		opacity: 1;
 		z-index: 1;
 		display: none;
@@ -99,7 +99,7 @@
 	}
 
 	.made-fixed {
-		margin-right: 593px;
+		transform: translateX(-278px);
 		position: fixed;
 		opacity: 0;
 		display: none;
@@ -110,7 +110,7 @@
 	}
 	.clique-fixed {
 		position: fixed;
-		margin-right: 573px;
+		transform: translateX(-267px);
 		opacity: 0;
 		display: none;
 

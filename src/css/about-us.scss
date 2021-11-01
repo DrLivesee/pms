@@ -34,12 +34,4 @@
 			display: none;
 		}
 	}
-
-	@supports (overflow:-webkit-marquee) and (justify-content:inherit) {
-		.text {
-			font-size: 40px;
-		}
-		
-		
-		}
 }

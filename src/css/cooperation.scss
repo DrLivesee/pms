@@ -20,16 +20,14 @@
 		position: relative;
 		margin-bottom: 324px;
 		justify-content: end;
-		
 	}
 
 	.clique {
 		font-size: 78px;
 		line-height: 58px;
 		font-weight: 800;
-		transform: translateX(-301px);
-		width: auto;
 		
+		width: auto;
 	}
 
 	.text {
@@ -37,7 +35,6 @@
 		font-size: 16px;
 		margin: 0;
 		padding: 0;
-		
 		
 		@media (min-width: 1170px) {
 			display: block;

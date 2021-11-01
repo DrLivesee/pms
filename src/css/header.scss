@@ -67,10 +67,12 @@
 
 	.people-fixed {
 		position: fixed;
-		transform: translateX(-254px);
+		transform: translateX(-274px);
 		opacity: 1;
 		z-index: 1;
 		display: none;
+		padding: 0;
+		margin: 0;
 		
 
 		@media (min-width: 1170px) {
@@ -99,10 +101,12 @@
 	}
 
 	.made-fixed {
-		transform: translateX(-278px);
+		transform: translateX(-298px);
 		position: fixed;
 		opacity: 0;
 		display: none;
+		padding: 0;
+		margin: 0;
 
 		@media (min-width: 1170px) {
 			display: block;
@@ -110,9 +114,11 @@
 	}
 	.clique-fixed {
 		position: fixed;
-		transform: translateX(-267px);
+		transform: translateX(-287px);
 		opacity: 0;
 		display: none;
+		padding: 0;
+		margin: 0;
 
 		@media (min-width: 1170px) {
 			display: block;

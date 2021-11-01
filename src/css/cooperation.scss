@@ -99,4 +99,13 @@
 			display: none;
 		}
 	}
+
+	.main-block {
+		
+	
+		@media (min-width: 1170px) {
+			flex-direction: row;
+			justify-content: center;
+		}
+	}
 }

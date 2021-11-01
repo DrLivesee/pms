@@ -18,16 +18,17 @@
 		display: flex;
 		flex-direction: row;
 		position: relative;
-		margin-bottom: 324px;
-		justify-content: end;
+		margin-bottom: 372px;
+		
 	}
 
 	.clique {
 		font-size: 78px;
 		line-height: 58px;
 		font-weight: 800;
-		
+		position: absolute;
 		width: auto;
+		left: 31px;
 	}
 
 	.text {
@@ -35,6 +36,9 @@
 		font-size: 16px;
 		margin: 0;
 		padding: 0;
+		position: absolute;
+		right: 0;
+		
 		
 		@media (min-width: 1170px) {
 			display: block;
@@ -97,12 +101,4 @@
 		}
 	}
 
-	.main-block {
-		
-	
-		@media (min-width: 1170px) {
-			flex-direction: row;
-			justify-content: center;
-		}
-	}
 }

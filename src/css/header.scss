@@ -114,7 +114,6 @@
 	}
 	.clique-fixed {
 		position: fixed;
-		transform: translateX(-287px);
 		opacity: 0;
 		display: none;
 		padding: 0;
@@ -122,6 +121,7 @@
 
 		@media (min-width: 1170px) {
 			display: block;
+			transform: translateX(-287px);
 		}
 	}
 

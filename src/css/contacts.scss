@@ -200,7 +200,6 @@
 				color: #fffce6;
 				background-color: black;
 				border-radius: 0%;
-				-webkit-appearance: none;
 
 				@media (min-width: 1170px) {
 					padding-bottom: 30px;
@@ -314,9 +313,6 @@
 				background-color: black;
 				border-radius: 0%;
 				margin-bottom: 50px;
-				-webkit-appearance: none;
-				-webkit-color: #fffce6;
-				-webkit-font-size: 30px;
 
 				&:hover {
 					&::placeholder {

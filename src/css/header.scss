@@ -12,6 +12,14 @@
 		padding-top: 470px;
 	}
 
+	@media (max-width: 1536px) {
+		@media (min-width: 1170px) {
+			padding-bottom: 640px;
+			padding-top: 300px;
+		}
+
+	}
+
 	.main-name {
 		display: flex;
 		justify-content: flex-end;

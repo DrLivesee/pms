@@ -299,8 +299,24 @@
 			// 		}
 			// 	}
 			// }
+
+			.input-tasks {
+				
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-between;
+				min-height: 140px;
+				margin-bottom: 120px;
+
+				@media (min-width: 1170px) {
+					min-height: 200px;
+					margin-bottom: 240px;
+				}
+				
+			}
 			.input-task {
-				align-self: center;
+				
 				padding-bottom: 5px;
 				padding-top: 15px;
 				display: block;
@@ -313,7 +329,8 @@
 				color: #fffce6;
 				background-color: black;
 				border-radius: 0%;
-				margin-bottom: 50px;
+				align-content: flex-end;
+				
 
 				&:hover {
 					&::placeholder {
@@ -322,10 +339,11 @@
 				}
 
 				&:nth-child(2n) {
-					margin-bottom: 280px;
+					
+					align-content: flex-end;
 
 					@media (min-width: 1170px) {
-						margin-bottom: 320px;
+						
 					}
 				}
 

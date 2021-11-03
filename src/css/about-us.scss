@@ -6,6 +6,11 @@
 	@media (min-width: 1170px) {
 		padding-top: 480px;
 		padding-bottom: 420px;
+
+		@media (max-width: 1536px) {
+			padding-top: 440px;
+		padding-bottom: 400px;
+		}
 	}
 
 	.text {

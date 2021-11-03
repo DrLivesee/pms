@@ -301,7 +301,6 @@
 			// }
 
 			.input-tasks {
-				
 				display: flex;
 				flex-direction: column;
 				align-items: center;
@@ -316,13 +315,12 @@
 				
 			}
 			.input-task {
-				
-				padding-bottom: 5px;
+				padding-bottom: 0px;
 				padding-top: 15px;
 				display: block;
 				width: 280px;
 				font-size: 30px;
-				height: 63px;
+				
 				border: none;
 				border-bottom: 2px solid #fffce6;
 				outline: none;
@@ -330,6 +328,7 @@
 				background-color: black;
 				border-radius: 0%;
 				align-content: flex-end;
+				
 				
 
 				&:hover {
@@ -355,7 +354,7 @@
 				}
 
 				@media (min-width: 1170px) {
-					padding-bottom: 30px;
+					padding-bottom: 3px;
 					padding-top: 15px;
 					width: 1042px;
 					font-size: 60px;

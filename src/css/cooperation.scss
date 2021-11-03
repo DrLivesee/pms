@@ -22,6 +22,9 @@
 		@media (min-width: 1170px) {
 			width: 880px;
 			margin-bottom: 372px;
+			@media (max-width: 1536px) {
+				margin-bottom: 272px;
+			}
 		}
 	}
 

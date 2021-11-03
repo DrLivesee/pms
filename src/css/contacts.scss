@@ -29,6 +29,9 @@
 					margin-right: 0px;
 					margin-bottom: 180px;
 					width: 100%;
+					@media (max-width: 1536px) {
+						margin-bottom: 80px;
+					}
 				}
 
 				@media (min-width: 1220px) {
@@ -40,6 +43,9 @@
 					@media (min-width: 1170px) {
 						margin-bottom: 200px;
 						width: 1042px;
+						@media (max-width: 1536px) {
+							margin-bottom: 100px;
+						}
 					}
 				}
 			}
@@ -55,16 +61,24 @@
 					margin-left: 0px;
 					width: 1096px;
 					margin-bottom: 100px;
+
+					@media (max-width: 1536px) {
+						margin-bottom: 50px;
+					}
 				}
 
 				.input-item {
-					// margin-bottom: 20px;
+					
 					display: flex;
 					align-self: center;
 					position: relative;
 
 					@media (min-width: 1170px) {
 						margin-bottom: 30px;
+
+						@media (max-width: 1536px) {
+							margin-bottom: 22px;
+						}
 					}
 
 					.label-name {
@@ -311,6 +325,10 @@
 				@media (min-width: 1170px) {
 					min-height: 200px;
 					margin-bottom: 240px;
+
+					@media (max-width: 1536px) {
+						margin-bottom: 200px;
+					}
 				}
 				
 			}

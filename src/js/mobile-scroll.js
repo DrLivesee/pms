@@ -156,9 +156,9 @@ window.addEventListener('scroll', function () {
 		peopleFixMob.classList.remove('display-none')
 	}
 
-	if (scroll >= 520 || scroll < 0) {
-		peopleFixMob.classList.add('display-none')
-	}
+	// if (scroll >= 520 || scroll < 0) {
+	// 	peopleFixMob.classList.add('display-none')
+	// }
 
 	if (scroll > 0) {
 		peopleMainMob.classList.add('display-none')
@@ -166,7 +166,7 @@ window.addEventListener('scroll', function () {
 		peopleMainMob.classList.remove('display-none')
 	}
 
-	if (scroll > 0) {
+	if (scroll > 0 && scroll <= 520) {
 		peopleFixMob.classList.remove('display-none')
 	} else {
 		peopleFixMob.classList.add('display-none')

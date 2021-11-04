@@ -37,7 +37,7 @@
 		display: flex;
 		justify-content: flex-end;
 		width: 326px;
-		opacity: 1;
+		opacity: 0;
 		background-color: aqua;
 		position: absolute;
 		margin-left: 0px;
@@ -65,7 +65,7 @@
 	}
 
 	.people-main-mobile {
-		
+		opacity: 0;
 		margin-right: 14px;
 
 		@media (min-width: 1170px) {

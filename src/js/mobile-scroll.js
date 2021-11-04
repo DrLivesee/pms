@@ -165,6 +165,12 @@ window.addEventListener('scroll', function () {
 	} else {
 		peopleMainMob.classList.remove('display-none')
 	}
+
+	if (scroll = 0 && scroll < 0) {
+		peopleFixMob.classList.add('display-none')
+	} else {
+		peopleFixMob.classList.remove('display-none')
+	}
 })
 
 $(function() {

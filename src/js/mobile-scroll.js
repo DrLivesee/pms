@@ -166,10 +166,10 @@ window.addEventListener('scroll', function () {
 		peopleMainMob.classList.remove('display-none')
 	}
 
-	if (scroll = 0 && scroll < 0) {
-		peopleFixMob.classList.add('display-none')
-	} else {
+	if (scroll > 0) {
 		peopleFixMob.classList.remove('display-none')
+	} else {
+		peopleFixMob.classList.add('display-none')
 	}
 })
 

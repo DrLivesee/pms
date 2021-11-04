@@ -156,7 +156,7 @@ window.addEventListener('scroll', function () {
 		peopleFixMob.classList.remove('display-none')
 	}
 
-	if (scroll >= 520 || scroll < 0) {
+	if (scroll >= 520) {
 		peopleFixMob.classList.add('display-none')
 	}
 

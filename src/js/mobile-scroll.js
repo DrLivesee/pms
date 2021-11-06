@@ -179,7 +179,7 @@ $(function() {
   
 	  var mass = Math.min(1.875, 1+0.0017*$(this).scrollTop());
   
-	  $('.people-fixed-mobile').css('transform', 'scale(' + mass + ')');
+	  $('.people-fixed-mobile').css('transform', 'translateX(-165px) scale(' + mass + ')');
 	});
 });
 

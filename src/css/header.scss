@@ -95,9 +95,8 @@
 		font-weight: 800;
 		transform-origin: left top;
 		left: 50%;
-		right: 50%;
-		margin-left: -165px;
 		
+		transform: translateX(-150px);
 		
 		@media (max-width: 410px) {
 			left: 23px;

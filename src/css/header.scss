@@ -96,8 +96,11 @@
 		font-weight: 800;
 		text-align: left;
 		transform-origin: left top;
-		left: 23px;
+		left: 42px;
 		
+		@media (max-width: 410px) {
+			left: 23px;
+		}
 
 		@media (min-width: 1170px) {
 			display: none;

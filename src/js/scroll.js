@@ -42,7 +42,7 @@ const opacMiddleTitle = (
 window.addEventListener('scroll', function () {
 	let scroll = window.pageYOffset
 
-	console.log(scroll)
+	// console.log(scroll)
 	// const bodyHeight = document.body.clientHeight
 
 	opacMiddleTitle(scroll, -200, 760 - VERT_OFFSET, fullName, false, false)

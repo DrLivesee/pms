@@ -92,11 +92,12 @@
 		position: fixed;
 		font-size: 32px;
 		line-height: 32px;
-		margin-right: 218px;
 		font-weight: 800;
-		text-align: left;
 		transform-origin: left top;
-		left: 42px;
+		left: 50%;
+		right: 50%;
+		margin-left: -165px;
+		
 		
 		@media (max-width: 410px) {
 			left: 23px;

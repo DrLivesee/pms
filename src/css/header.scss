@@ -96,11 +96,6 @@
 		transform-origin: left top;
 		left: 50%;
 		
-		transform: translateX(-150px);
-		
-		@media (max-width: 410px) {
-			left: 23px;
-		}
 
 		@media (min-width: 1170px) {
 			display: none;

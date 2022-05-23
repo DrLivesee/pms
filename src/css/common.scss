@@ -58,6 +58,10 @@ a {
 	display: none !important;
 }
 
+.display-flex {
+	display: flex !important;
+}
+
 .opacity-zero {
 	opacity: 0;
 }
@@ -96,6 +100,145 @@ a {
 		display: none;
 	}
 }
+
+.blur {
+	filter: blur(5px);
+	transition: all 0.2s ease;
+}
+
+.overlay-blocker {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	content: ' ';
+	background-color: black;
+	animation: bounce2 0.5s;
+	opacity: 0.3;
+}
+
+@keyframes bounce2 {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0.2;
+	}
+
+	100% {
+		opacity: 0.3;
+	}
+}
+
+.swiper {
+	width: 300px;
+	// border-radius: 25px;
+	margin-top: 30px;
+
+	@media (min-width: 820px) {
+		display: none;
+	}
+
+	.swiper-slide {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		span {
+			display: block;
+			width: 100px;
+			text-align: center;
+			font-weight: bold;
+			font-size: 20px;
+
+			border-bottom: 1px solid black;
+		}
+
+		p {
+			display: block;
+			margin: 0;
+			padding: 0;
+			margin-bottom: 20px;
+		}
+
+		img {
+			display: block;
+			width: 285px;
+		}
+	}
+}
+.swiper-pagination {
+	display: block;
+	margin-top: 50px;
+	@media (min-width: 820px) {
+		display: none;
+	}
+}
+
+.swiper-tablet {
+	display: none;
+
+	@media (min-width: 820px) {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	@media (min-width: 1170px) {
+		display: none;
+	}
+
+	.swiper-wrapper {
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.swiper-slide {
+		width: 250px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		span {
+			display: block;
+			width: 100px;
+			text-align: center;
+			font-weight: bold;
+			font-size: 20px;
+
+			border-bottom: 1px solid black;
+		}
+
+		p {
+			display: block;
+			margin: 0;
+			padding: 0;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+// .animation-port {
+// 	animation: bounce4 4s;
+// 	transition: all 4s ease-in-out;
+// }
+
+// @keyframes bounce4 {
+// 	0% {
+// 		opacity: 0;
+// 	}
+
+// 	50% {
+// 		opacity: 0.15;
+// 	}
+
+// 	100% {
+// 		opacity: 0.3;
+// 	}
+// }
 
 // data-aos="fade-up"
 //     data-aos-offset="200"

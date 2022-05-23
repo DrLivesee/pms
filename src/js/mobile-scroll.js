@@ -9,6 +9,10 @@ const textWorksMob = document.querySelector('.works .text-mobile')
 const textCooperationMob = document.querySelector('.cooperation .text-mobile')
 const peopleMainMob = document.querySelector('.people-main-mobile')
 
+const swiperMobile = document.querySelector('.swiper')
+const swiperTablet = document.querySelector('.swiper-tablet')
+const swiperPog = document.querySelector('.swiper-pagination')
+
 const VERT_OFFSET = 200
 
 const opacMiddleTitle = (
@@ -38,8 +42,6 @@ const opacMiddleTitle = (
 	}
 }
 
-
-
 window.addEventListener('scroll', function () {
 	let scroll = window.pageYOffset
 
@@ -52,8 +54,19 @@ window.addEventListener('scroll', function () {
 	opacMiddleTitle(scroll, 300, 1400 - VERT_OFFSET, textAboutUsMob, false, false)
 	opacMiddleTitle(scroll, 900, 2000 - VERT_OFFSET, madeMob, false, false)
 	opacMiddleTitle(scroll, 1000, 2100 - VERT_OFFSET, textWorksMob, false, false)
+	opacMiddleTitle(scroll, 1100, 2300 - VERT_OFFSET, swiperMobile, false, false)
+	opacMiddleTitle(scroll, 1100, 2300 - VERT_OFFSET, swiperTablet, false, false)
+	opacMiddleTitle(scroll, 1100, 2200 - VERT_OFFSET, swiperPog, false, false)
+
 	opacMiddleTitle(scroll, 1700, 2800 - VERT_OFFSET, cliqueMob, false, false)
-	opacMiddleTitle(scroll, 1700, 2900 - VERT_OFFSET, textCooperationMob, false, false)
+	opacMiddleTitle(
+		scroll,
+		1700,
+		2900 - VERT_OFFSET,
+		textCooperationMob,
+		false,
+		false
+	)
 	// opacMiddleTitle(scroll, 1500, 2750 - VERT_OFFSET, textWorks, false, false)
 	// opacMiddleTitle(
 	// 	scroll,
@@ -120,30 +133,28 @@ window.addEventListener('scroll', function () {
 
 	// if (scroll > 0 && scroll < 505) {
 	// 	peopleFixMob.classList.remove('display-none')
-		
+
 	// } else {
 	// 	peopleFixMob.classList.add('display-none')
-		
+
 	// }
 
 	// if (scroll > 0 && scroll < 532) {
 	// 	peopleFixMob.classList.remove('display-none')
 	// 	peopleMob.style.opacity = 0
-	// } 
+	// }
 
 	// if (scroll = 0) {
 	// 	peopleFixMob.classList.add('display-none')
-	// } 
-	
+	// }
 })
 
 window.addEventListener('scroll', function () {
 	let scroll = window.pageYOffset
 
-
 	if (scroll > 0 && scroll < 520) {
 		peopleMob.style.opacity = 0
-	} 
+	}
 	// else {
 	// 	peopleMob.style.opacity = 1
 	// }
@@ -173,15 +184,16 @@ window.addEventListener('scroll', function () {
 	}
 })
 
-$(function() {
+$(function () {
+	$(window).scroll(function () {
+		var mass = Math.min(1.875, 1 + 0.0017 * $(this).scrollTop())
 
-	$(window).scroll(function() {
-  
-	  var mass = Math.min(1.875, 1+0.0017*$(this).scrollTop());
-  
-	  $('.people-fixed-mobile').css('transform', 'translateX(-165px) scale(' + mass + ')');
-	});
-});
+		$('.people-fixed-mobile').css(
+			'transform',
+			'translateX(-165px) scale(' + mass + ')'
+		)
+	})
+})
 
 const connection = document.getElementById('btn-light')
 
@@ -213,10 +225,9 @@ const items = [peopleMainMob, peopleFixMob, connection, further]
 
 // $(function() {
 // 	$('body').scroll(navigation);
-//   navigation();	
+//   navigation();
 // 	var $root = $('html, body');
 
-	
 // 	$(connection).click(function() {
 // 			$root.animate({
 // 					scrollTop: $( $(this).attr('href') ).offset().top
@@ -246,33 +257,32 @@ const items = [peopleMainMob, peopleFixMob, connection, further]
 //     });
 // });
 
-$(document).ready(function(){
-		$(connection).click(function (e) {
-			e.preventDefault();
-			var id  = $(this).attr('href'),
-				top = $(id).offset().top;
-			$('body,html').animate({scrollTop: top}, 500);
-		});
+$(document).ready(function () {
+	$(connection).click(function (e) {
+		e.preventDefault()
+		var id = $(this).attr('href'),
+			top = $(id).offset().top
+		$('body,html').animate({ scrollTop: top }, 500)
+	})
 
-		$(further).click(function (e) {
-			e.preventDefault();
-			var id  = $(this).attr('href'),
-				top = $(id).offset().top;
-			$('body,html').animate({scrollTop: top}, 500);
-		});
+	$(further).click(function (e) {
+		e.preventDefault()
+		var id = $(this).attr('href'),
+			top = $(id).offset().top
+		$('body,html').animate({ scrollTop: top }, 500)
+	})
 
-		$(peopleMainMob).click(function (e) {
-			e.preventDefault();
-			var id  = $(this).attr('href'),
-				top = $(id).offset().top;
-			$('body,html').animate({scrollTop: top}, 500);
-		});
+	$(peopleMainMob).click(function (e) {
+		e.preventDefault()
+		var id = $(this).attr('href'),
+			top = $(id).offset().top
+		$('body,html').animate({ scrollTop: top }, 500)
+	})
 
-		$(peopleFixMob).click(function (e) {
-			e.preventDefault();
-			var id  = $(this).attr('href'),
-				top = $(id).offset().top;
-			$('body,html').animate({scrollTop: top}, 500);
-		});
-});
-	
+	$(peopleFixMob).click(function (e) {
+		e.preventDefault()
+		var id = $(this).attr('href'),
+			top = $(id).offset().top
+		$('body,html').animate({ scrollTop: top }, 500)
+	})
+})

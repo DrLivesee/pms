@@ -10,6 +10,13 @@ const textWorks = document.querySelector('.works .text')
 const textCooperation = document.querySelector('.cooperation .text')
 const cliqueCoop = document.querySelector('.cooperation .clique')
 
+const port = document.querySelectorAll('.portfolio')
+const portFull = []
+
+for (const node of port) {
+	portFull.push(node)
+}
+
 const VERT_OFFSET = 200
 
 const opacMiddleTitle = (
@@ -44,6 +51,20 @@ window.addEventListener('scroll', function () {
 
 	// console.log(scroll)
 	// const bodyHeight = document.body.clientHeight
+
+	// for (let i = 0; i < portFull.length; i++) {
+	// 	if (scroll < 2020) {
+	// 		portFull[i].style.display = 'none'
+	// 		portFull[i].classList.remove('animation-port')
+	// 	} else {
+	// 		portFull[i].style.display = 'block'
+	// 		portFull[i].classList.add('animation-port')
+	// 	}
+	// }
+
+	for (let i = 0; i < portFull.length; i++) {
+		opacMiddleTitle(scroll, 1800, 2550 - VERT_OFFSET, portFull[i], false, false)
+	}
 
 	opacMiddleTitle(scroll, -200, 760 - VERT_OFFSET, fullName, false, false)
 	opacMiddleTitle(scroll, 500, 1900 - VERT_OFFSET, textAboutUs, false, false)
@@ -113,47 +134,46 @@ window.addEventListener('scroll', function () {
 	}
 })
 
-
-$(document).ready(function(){
+$(document).ready(function () {
 	$(people).click(function (e) {
-		e.preventDefault();
-		var id  = $(this).attr('href'),
-			top = $(id).offset().top;
-		$('body,html').animate({scrollTop: top}, 500);
-	});
+		e.preventDefault()
+		var id = $(this).attr('href'),
+			top = $(id).offset().top
+		$('body,html').animate({ scrollTop: top }, 500)
+	})
 
 	$(made).click(function (e) {
-		e.preventDefault();
-		var id  = $(this).attr('href'),
-			top = $(id).offset().top;
-		$('body,html').animate({scrollTop: top}, 500);
-	});
+		e.preventDefault()
+		var id = $(this).attr('href'),
+			top = $(id).offset().top
+		$('body,html').animate({ scrollTop: top }, 500)
+	})
 
 	$(clique).click(function (e) {
-		e.preventDefault();
-		var id  = $(this).attr('href'),
-			top = $(id).offset().top;
-		$('body,html').animate({scrollTop: top}, 500);
-	});
+		e.preventDefault()
+		var id = $(this).attr('href'),
+			top = $(id).offset().top
+		$('body,html').animate({ scrollTop: top }, 500)
+	})
 
 	$(peopleFix).click(function (e) {
-		e.preventDefault();
-		var id  = $(this).attr('href'),
-			top = $(id).offset().top;
-		$('body,html').animate({scrollTop: top}, 500);
-	});
+		e.preventDefault()
+		var id = $(this).attr('href'),
+			top = $(id).offset().top
+		$('body,html').animate({ scrollTop: top }, 500)
+	})
 
 	$(madeFix).click(function (e) {
-		e.preventDefault();
-		var id  = $(this).attr('href'),
-			top = $(id).offset().top;
-		$('body,html').animate({scrollTop: top}, 500);
-	});
+		e.preventDefault()
+		var id = $(this).attr('href'),
+			top = $(id).offset().top
+		$('body,html').animate({ scrollTop: top }, 500)
+	})
 
 	$(cliqueFix).click(function (e) {
-		e.preventDefault();
-		var id  = $(this).attr('href'),
-			top = $(id).offset().top;
-		$('body,html').animate({scrollTop: top}, 500);
-	});
-});
+		e.preventDefault()
+		var id = $(this).attr('href'),
+			top = $(id).offset().top
+		$('body,html').animate({ scrollTop: top }, 500)
+	})
+})

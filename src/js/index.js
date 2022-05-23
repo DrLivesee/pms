@@ -13,4 +13,5 @@ import './module'
 import './scroll'
 import './mobile-scroll'
 import './form'
-
+import './portfolio'
+import './portfolio-mobile'

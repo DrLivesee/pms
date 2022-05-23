@@ -1,6 +1,7 @@
 .works {
 	padding-top: 110px;
-	padding-bottom: 420px;
+	padding-bottom: 20px;
+	position: relative;
 	// background-color: mediumorchid;
 
 	@media (min-width: 1170px) {
@@ -9,7 +10,89 @@
 
 		@media (max-width: 1536px) {
 			padding-top: 440px;
-		padding-bottom: 450px;
+			padding-bottom: 450px;
+		}
+	}
+
+	.portfolio {
+		display: none;
+		@media (min-width: 1170px) {
+			position: absolute;
+			display: block;
+			border-radius: 28px;
+			background-color: black;
+			cursor: pointer;
+			box-shadow: 0px 0px 3px rgb(0, 0, 0);
+		}
+
+		&:hover img {
+			opacity: 0.05;
+			transition: all 0.3s ease-in-out;
+		}
+
+		img {
+			width: 50px;
+
+			@media (min-width: 1170px) {
+				width: auto;
+				display: block;
+				transition: all 0.4s ease-in-out;
+			}
+		}
+
+		span {
+			display: none;
+			@media (min-width: 1170px) {
+				color: #fffce6;
+				position: absolute;
+				top: 112px;
+				width: 100%;
+				text-align: center;
+				margin: 0 auto;
+				font-size: 16px;
+				font-weight: bold;
+				display: block;
+				opacity: 0;
+				line-height: 16px;
+				transition: all 0.4s ease-in-out;
+			}
+		}
+	}
+
+	.we-grow {
+		@media (min-width: 1170px) {
+			top: 154px;
+			left: 60px;
+			text-align: center;
+		}
+
+		&:hover span {
+			opacity: 1;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+
+	.gotovo {
+		@media (min-width: 1170px) {
+			top: 77px;
+			right: 140px;
+		}
+
+		&:hover span {
+			opacity: 1;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+
+	.nextml {
+		@media (min-width: 1170px) {
+			top: 630px;
+			right: 480px;
+		}
+
+		&:hover span {
+			opacity: 1;
+			transition: all 0.3s ease-in-out;
 		}
 	}
 
@@ -21,6 +104,93 @@
 
 		@media (min-width: 1170px) {
 			display: block;
+		}
+	}
+
+	.portfolio-descr {
+		display: none;
+		@media (min-width: 1170px) {
+			// border: 5px solid black;
+			background-color: #fffce6;
+			width: 960px;
+			position: fixed;
+			top: calc(50% - 276px);
+			left: calc(50% - 480px);
+			border-radius: 25px;
+			padding: 20px 30px;
+			z-index: 10;
+			flex-direction: row;
+			justify-content: space-around;
+			transition: all 1s ease-in-out;
+			animation: bounce 0.5s;
+		}
+
+		@keyframes bounce {
+			0% {
+				transform: scale(0);
+			}
+
+			70% {
+				transform: scale(1);
+			}
+
+			85% {
+				transform: scale(0.98);
+			}
+
+			100% {
+				transform: scale(1);
+			}
+		}
+
+		.images {
+			img {
+				display: block;
+				margin-bottom: 20px;
+				border-radius: 25px;
+
+				&:last-child {
+					margin-bottom: 0px;
+				}
+			}
+		}
+		.text {
+			align-self: center;
+			font-size: 16px;
+			margin-right: 0px;
+			margin-left: 60px;
+
+			min-width: 300px;
+
+			h3 {
+				display: block;
+				margin-bottom: 20px;
+			}
+
+			p {
+				display: block;
+				margin-bottom: 30px;
+			}
+			ul {
+				list-style: none;
+			}
+		}
+
+		.close {
+			align-self: flex-start;
+			p {
+				font-weight: bold;
+				cursor: pointer;
+				padding: 5px;
+				opacity: 0.9;
+				transition: all 0.1s ease;
+			}
+
+			&:hover {
+				color: darkred;
+				opacity: 1;
+				transition: all 0.1s ease;
+			}
 		}
 	}
 

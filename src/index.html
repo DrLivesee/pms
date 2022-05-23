@@ -14,14 +14,23 @@
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap"
 			rel="stylesheet"
 		/>
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-212213906-1">
-		</script>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+		/>
+
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-212213906-1"
+		></script>
 		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-		
-		  gtag('config', 'UA-212213906-1');
+			window.dataLayer = window.dataLayer || []
+			function gtag() {
+				dataLayer.push(arguments)
+			}
+			gtag('js', new Date())
+
+			gtag('config', 'UA-212213906-1')
 		</script>
 	</head>
 
@@ -34,7 +43,7 @@
 				<a class="people-fixed-mobile display-none" href="#about-us">people</a>
 				<a class="made-fixed" href="#works">made</a>
 				<a class="clique-fixed" href="#cooperation">clique</a>
-				
+
 				<div class="main-name">
 					<a class="people" href="#about-us">people</a>
 					<a class="people-main-mobile" href="#about-us">people</a>
@@ -53,30 +62,148 @@
 			<div class="container">
 				<div id="about-us" class="main-block about-us">
 					<span class="text">
-						Мы делаем дизайн и разрабатываем сайты <br /><br />Мы стремимся работать только со смелыми заказчиками, готовым к нестандартным решениям. 
+						Мы делаем всё, чего касается digital. <br /><br />Мы стремимся
+						работать только со смелыми заказчиками, готовым к нестандартным
+						решениям.
 					</span>
 					<h3 class="people-mobile">people</h3>
 					<span class="text-mobile">
-						Мы делаем дизайн и разрабатываем сайты <br /><br />Мы стремимся работать только со смелыми заказчиками, готовым к нестандартным решениям. 
+						Мы делаем всё, чего касается digital. <br /><br />Мы стремимся
+						работать только со смелыми заказчиками, готовым к нестандартным
+						решениям.
 					</span>
 				</div>
 				<div id="works" class="main-block works">
 					<span class="text"
-						>Наша цель, чтобы наш дизайн работал на Вас. Здесь будут кейсы, которые совмещают 
-						в себе красоту и утилитарность.</span
+						>Наша цель, чтобы креатив работал на Вас. Здесь собраны работы
+						студии, которые совмещают в себе красоту и утилитарность.</span
 					>
 					<h3 class="made-mobile">made</h3>
 					<span class="text-mobile"
-						>Наша цель, чтобы наш дизайн работал на Вас. Здесь будут кейсы, которые совмещают 
-						в себе красоту и утилитарность.</span
+						>Наша цель, чтобы креатив работал на Вас. Здесь собраны работы
+						студии, которые совмещают в себе красоту и утилитарность..</span
 					>
+					<div class="we-grow portfolio">
+						<img src="/img/wegrow.png" alt="" />
+						<span>WE GROW / Айдентика</span>
+					</div>
+					<div class="gotovo portfolio">
+						<img src="/img/gotovo.png" alt="" />
+						<span>GOTOVO / Айдентика</span>
+					</div>
+					<div class="nextml portfolio">
+						<img src="/img/nextml.png" alt="" />
+						<span>NEXTML / UX/UI</span>
+					</div>
+
+					<div class="swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<span>WE GROW</span>
+								<p>Айдентика</p>
+								<img src="/img/wegrow.png" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<span>GOTOVO</span>
+								<p>Айдентика</p>
+								<img src="/img/gotovo.png" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<span>NEXTML</span>
+								<p>UX / UI</p>
+								<img src="/img/nextml.png" alt="" />
+							</div>
+						</div>
+					</div>
+					<br />
+					<div class="swiper-pagination"></div>
+					<div class="swiper-tablet">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<span>WE GROW</span>
+								<p>Айдентика</p>
+								<img src="/img/wegrow.png" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<span>GOTOVO</span>
+								<p>Айдентика</p>
+								<img src="/img/gotovo.png" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<span>NEXTML</span>
+								<p>UX / UI</p>
+								<img src="/img/nextml.png" alt="" />
+							</div>
+						</div>
+					</div>
+
+					<div class="overlay-blocker display-none" id="overlay-blocker"></div>
+					<div class="we-grow-descr portfolio-descr">
+						<div class="images">
+							<img src="/img/grow/1.png" alt="" />
+							<img src="/img/grow/2.png" alt="" />
+							<img src="/img/grow/3.png" alt="" />
+						</div>
+						<div class="text">
+							<h3>WE-GROW</h3>
+							<p>Разработка брендинга для магазина капсульных огородов</p>
+							<ul>
+								<li>/ Изучение теорий</li>
+								<li>/ Доработка первоначальной концепции</li>
+								<li>/ Разработка бренбука</li>
+								<li>/ Айдентика</li>
+							</ul>
+						</div>
+						<div class="close">
+							<p>Close</p>
+						</div>
+					</div>
+					<div class="gotovo-descr portfolio-descr">
+						<div class="images">
+							<img src="/img/gotovo/1.png" alt="" />
+							<img src="/img/gotovo/2.png" alt="" />
+							<img src="/img/gotovo/3.png" alt="" />
+						</div>
+						<div class="text">
+							<h3>GOTOVO</h3>
+							<p>Разработка брендинга для домашних компотов и морсов</p>
+							<ul>
+								<li>/ Визуализация продукта</li>
+								<li>/ Айдентика</li>
+							</ul>
+						</div>
+						<div class="close">
+							<p>Close</p>
+						</div>
+					</div>
+					<div class="nextml-descr portfolio-descr">
+						<div class="images">
+							<img src="/img/nextml/1.png" alt="" />
+							<img src="/img/nextml/2.png" alt="" />
+							<img src="/img/nextml/3.png" alt="" />
+						</div>
+						<div class="text">
+							<h3>NEXTML</h3>
+							<p>
+								Разработка полноценной айдентики, брендбука и адаптивного сайта
+							</p>
+							<ul>
+								<li>/ Айдентика</li>
+								<li>/ Брендбук</li>
+								<li>/ UX UI</li>
+							</ul>
+						</div>
+						<div class="close">
+							<p>Close</p>
+						</div>
+					</div>
 				</div>
 				<div id="cooperation" class="main-block cooperation">
 					<div class="coop-flex-block">
 						<a class="clique" href="#cooperation">clique</a>
 						<span class="text"
-							>Свяжитесь с нами и опишите задачу. <br>Чаще всего мы пускаем все силы
-							на ее <br>выполнение.</span
+							>Свяжитесь с нами и опишите задачу. <br />Чаще всего мы пускаем
+							все силы на ее <br />выполнение.</span
 						>
 					</div>
 					<h3 class="clique-mobile">clique</h3>
@@ -84,12 +211,18 @@
 						>Свяжитесь с нами и опишите задачу. Чаще всего мы пускаем все силы
 						на ее выполнение.</span
 					>
-					<a id="btn-light" class="btn btn-ligth" href="#contact-anchor">Связаться с нами</a>
+					<a id="btn-light" class="btn btn-ligth" href="#contact-anchor"
+						>Связаться с нами</a
+					>
 				</div>
 			</div>
 			<div id="contacts" class="contacts">
 				<div class="container">
-					<form class="main-form" action="https://formspree.io/f/xnqlrdyk" method="POST">
+					<form
+						class="main-form"
+						action="https://formspree.io/f/xnqlrdyk"
+						method="POST"
+					>
 						<h1 id="contact-anchor">Оставьте, пожалуйста, Ваши данные</h1>
 						<div class="input-items">
 							<div class="input-item">
@@ -136,13 +269,16 @@
 							</div>
 							<div class="input-item telegram-user">
 								<input type="checkbox" name="telegram" id="input-telegram" />
-								<label for="input-telegram">
-									я использую телеграм
-								</label>
+								<label for="input-telegram"> я использую телеграм </label>
 							</div>
 						</div>
 
-						<a id="btn-further" class="btn btn-black btn-further" href="#userProblem">Далее</a>
+						<a
+							id="btn-further"
+							class="btn btn-black btn-further"
+							href="#userProblem"
+							>Далее</a
+						>
 						<h1 id="userProblem">Вкратце опишите Вашу задачу:</h1>
 						<!-- <textarea
 							class="textarea-user"
@@ -154,27 +290,25 @@
 							placeholder="Введите  (до 100 символов)"
 						></textarea> -->
 						<div class="input-tasks">
-						<input
-						class="input-task"
-						id="tel-user"
-						type="text"
-						name="task"
-						value=""
-						placeholder="дизайн/сайт/..."
-						autocomplete="off"
-						
-						/>
-						<input
-						class="input-task"
-						id="tel-user"
-						type="text"
-						name="forWhat"
-						value=""
-						placeholder="для магазина/..."
-						autocomplete="off"
-						
-						/>
-					</div>
+							<input
+								class="input-task"
+								id="tel-user"
+								type="text"
+								name="task"
+								value=""
+								placeholder="дизайн/сайт/..."
+								autocomplete="off"
+							/>
+							<input
+								class="input-task"
+								id="tel-user"
+								type="text"
+								name="forWhat"
+								value=""
+								placeholder="для магазина/..."
+								autocomplete="off"
+							/>
+						</div>
 						<button class="btn btn-black" type="submit">Отправить</button>
 					</form>
 				</div>
@@ -187,7 +321,9 @@
 				</div>
 			</div>
 		</main>
+
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 		<script src="./js/index.js"></script>
 	</body>
 </html>
